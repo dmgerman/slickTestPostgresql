@@ -1,0 +1,49 @@
+* Introduction
+
+This is a simple example of how to use slick with postgresql. 
+
+I found it confusing at the beginning and the tutorials I found where either over complicated or did not completely
+work.
+
+The tutorial:
+
+- Drops a table if exists
+- Creates a table
+- Inserts some tuples (in two inserts)
+- Does two selects
+  - without a where clause
+  - with a where clause
+
+
+* How to run
+
+
+You must modified the file ./src/main/resources/application.conf  with the corresponding connection parameters.
+
+#+BEGIN_EXAMPLE
+postgresDB {
+  url = "jdbc:postgresql://localhost/scala"
+  driver = org.postgresql.Driver
+  user="dmg"
+  password=${DB_PG_PWD}
+}
+#+END_EXAMPLE
+
+Simply clone, modify application.conf and
+
+#+BEGIN_SRC bash
+sbt run
+#+END_SRC
+
+The output should be something like this:
+
+#+BEGIN_EXAMPLE
+Acme, Inc.: 99 Market Street : Groundsville
+Superior Coffee: 1 Party Place : Mendocino
+Habit Coffee: 190 Pandora St : Victoria
+----------------------------------------
+Habit Coffee: 190 Pandora St : Victoria
+#+END_EXAMPLE
+
+Enjoy!
+
