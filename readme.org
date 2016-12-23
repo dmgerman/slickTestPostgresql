@@ -1,11 +1,10 @@
 * Introduction
 
-This is a simple example of how to use slick with postgresql. 
+This tutorial is based  on the tutorial by Stephan February [[http://www.hashbangbin.sh/posts/getting-started-scala-%2B-slick-%2B-postgresql-mysql/]]
 
-I found it confusing at the beginning and the tutorials I found where either over complicated or did not completely
-work.
+I have simplified his tutorial and make it postgresql exclusive.
 
-The tutorial:
+This tutorial:
 
 - Drops a table if exists
 - Creates a table
